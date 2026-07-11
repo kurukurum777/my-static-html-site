@@ -2,11 +2,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My Static HTML Site</title>
+  <title>やることリスト</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Azure Static Web Apps Demo</h1>
-  <p>GitHub Actions からデプロイしています。生天目</p>
+  <div class="container">
+    <h1>やることリスト</h1>
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="タスクを入力してね">
+      <button id="addButton">追加</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
